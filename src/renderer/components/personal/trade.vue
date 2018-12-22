@@ -152,11 +152,11 @@ export default {
       hq_data: [],
       codes,
       log: '==QUANTAXIS_TRADE== LOGS',
-      wsuri: 'ws://www.yutiansut.com:8010/trade',
+      wsuri: 'ws://localhost:8010/trade',
       loginDialog: false,
       advanceSetting: false,
-      brokers: ['海通证券', '同花顺模拟交易', '通达信模拟交易', 'QUANTAXIS回测', 'ctp', 'ctp_mini'],
-      brokers_py: ['haitong', 'ths_moni', 'tdx_moni', 'quantaxis_backtest', 'ctp', 'ctp_min'],
+      brokers: ['海通证券', '同花顺模拟交易', '通达信模拟交易', 'QUANTAXIS回测', 'ctp', 'sinmow'],
+      brokers_py: ['haitong', 'ths_moni', 'tdx_moni', 'quantaxis_backtest', 'ctp', 'sinmow'],
       focus_trade_account: '',
       broker_id: 0,
       broker: '海通证券',
@@ -189,6 +189,7 @@ export default {
       cur_price: null, // 当前价
       order_amount: null, // 订单数量
       order_towards: false, // 订单方向
+      order_offset: 'open', // 订单属性
       order_status: 100, // 订单状态 100 刚创建
       order_id: null, // 订单id
       trade_id: null, // 交易id
@@ -474,7 +475,7 @@ export default {
     get_stock_day (code) {
       console.log(code)
       this.code = code
-      axios.get('http://www.yutiansut.com:8010/marketdata/stock/day?code=' + code)
+      axios.get('http://localhost:8010/marketdata/stock/day?code=' + code)
         .then(response => {
           // console.log(response.data['result'])
           this.hq_data = response.data['result']
