@@ -179,7 +179,7 @@ export default {
       loading: false,
       scroller: null,
       account_cookie: 'none',
-      acc: {'portfolio_cookie': 'loading', 'running_time': 'loading'},
+      acc: { 'portfolio_cookie': 'loading', 'running_time': 'loading' },
       itemDX: [{
         'user_cookie': 'admin',
         'portfolio_cookie': 'macd_test',
