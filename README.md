@@ -2,7 +2,7 @@
 
 > quantaxis desktop
 
-(本项目需要配合 [QUANTAXIS/QUANTAXIS](https://github.com/quantaxis/quantaxis) 使用, 安装完 quantaxis后, 使用quantaxis_webserver --port==8010 开启后台服务器)
+(本项目需要配合 [QUANTAXIS/QUANTAXIS](https://github.com/quantaxis/quantaxis) 使用, 安装完 quantaxis后, 使用quantaxis_webserver --port=8010 开启后台服务器)
 
 
 关于 QUANTAXIS_WEBSERVER:
@@ -14,7 +14,7 @@ pip install quantaxis_webserver
 pip install git+https://github.com/yutiansut/tornado_http2
 ```
 
-使用 ```quantaxis_webserver --port==8010``` 启用后台服务器
+使用 ```quantaxis_webserver --port=8010``` 启用后台服务器
 
 
 
