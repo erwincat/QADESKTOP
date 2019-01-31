@@ -2,8 +2,8 @@
   <div id='acc'>
       <div id='linker'>
         <mu-breadcrumb>
-          <mu-breadcrumb-item href="/">Personal</mu-breadcrumb-item>
-          <mu-breadcrumb-item @click="get_strategymember">Backtest</mu-breadcrumb-item>
+          <mu-breadcrumb-item href="/">{{portfolio}}</mu-breadcrumb-item>
+          <mu-breadcrumb-item @click="get_strategymember">ACCOUNTS</mu-breadcrumb-item>
         </mu-breadcrumb>
 
       </div>
@@ -169,6 +169,7 @@ export default {
   data () {
     return {
       chart: null,
+      portfolio: 'RB_PORTFOLIO',
       activeTab: 'tab1',
       height: '800px',
       selectable: false,

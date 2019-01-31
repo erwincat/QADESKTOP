@@ -90,8 +90,8 @@ export default new Router({
         }]
       },
       {
-        'path': '/personal/backtest',
-        component: require('@/components/personal/backtest').default
+        'path': '/personal/portfolio/:id',
+        component: require('@/components/personal/portfolio').default
       }
     ]
   }

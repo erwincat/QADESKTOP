@@ -25,7 +25,7 @@
                 <mu-list-item class='menu_list'  title='版块监控'></mu-list-item>
               </router-link>
  -->
-              <router-link to='/personal/backtest'>
+              <router-link to='/personal/portfolio'>
                   <mu-list-item title='回测概览'></mu-list-item>
               </router-link>
               <router-link to='/personal/account'>
