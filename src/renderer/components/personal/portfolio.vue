@@ -169,7 +169,6 @@ export default {
   data () {
     return {
       chart: null,
-      portfolio: 'RB_PORTFOLIO',
       activeTab: 'tab1',
       height: '800px',
       selectable: false,

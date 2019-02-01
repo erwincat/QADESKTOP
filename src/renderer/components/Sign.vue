@@ -108,7 +108,7 @@ export default {
           if (response.data === 'SUCCESS') {
             sessionStorage.user = name
             sessionStorage.password = password
-            this.$router.push('/personal/index')
+            this.$router.push('/personal/user')
           }
         })
         .catch(function (error) {
