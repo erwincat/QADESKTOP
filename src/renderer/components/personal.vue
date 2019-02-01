@@ -10,7 +10,7 @@
         </router-link>
 
 
-        <router-link to='/personal/account'>
+        <router-link to='/personal/user'>
           <mu-list-item title='账户管理'></mu-list-item>
         </router-link>
         <mu-divider/>

@@ -28,7 +28,7 @@
               <router-link to='/personal/portfolio'>
                   <mu-list-item title='回测概览'></mu-list-item>
               </router-link>
-              <router-link to='/personal/account'>
+              <router-link to='/personal/user'>
                 <mu-list-item class='menu_list'  title='账户管理'></mu-list-item>
               </router-link>
               <router-link to='/personal/runbacktest'>

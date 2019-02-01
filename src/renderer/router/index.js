@@ -38,15 +38,15 @@ export default new Router({
         component: require('@/components/personal/setting').default
       },
       {
-        'path': '/personal/account',
-        component: require('@/components/personal/account').default,
+        'path': '/personal/user',
+        component: require('@/components/personal/user').default,
         children: [{
-          'path': '/personal/account/bind',
-          component: require('@/components/personal/account/bind_account').default
+          'path': '/personal/user/bind',
+          component: require('@/components/personal/user/bind_account').default
         },
         {
-          'path': '/personal/account/reset_password',
-          component: require('@/components/personal/account/reset_password').default
+          'path': '/personal/user/reset_password',
+          component: require('@/components/personal/user/reset_password').default
         }]
       },
       {
@@ -91,6 +91,7 @@ export default new Router({
       },
       {
         'path': '/personal/portfolio/:id',
+        name: 'portfolio',
         component: require('@/components/personal/portfolio').default
       }
     ]

@@ -2,7 +2,7 @@
   <div id='acc'>
       <div id='linker'>
         <mu-breadcrumb>
-          <mu-breadcrumb-item href="/">{{portfolio}}</mu-breadcrumb-item>
+          <mu-breadcrumb-item href="/">{{portfolio_cookie}}</mu-breadcrumb-item>
           <mu-breadcrumb-item @click="get_strategymember">ACCOUNTS</mu-breadcrumb-item>
         </mu-breadcrumb>
 
@@ -177,6 +177,8 @@ export default {
       enableSelectAll: false,
       showCheckbox: false,
       user: sessionStorage.user,
+      user_cookie: sessionStorage.user_cookie,
+      portfolio_cookie: sessionStorage.portfolio_cookie,
       loading: false,
       scroller: null,
       account_cookie: 'none',
@@ -205,7 +207,7 @@ export default {
   },
   methods: {
     get_strategymember () {
-      axios.get('http://localhost:8010/accounts/all')
+      axios.get('http://localhost:8010/portfolio?action=get_accounts&user_cookie=' + this.user_cookie + '&portfolio_cookie=' + this.portfolio_cookie)
         .then(response => {
           this.itemDX = response.data['result']
         })

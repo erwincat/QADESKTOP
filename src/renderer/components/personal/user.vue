@@ -34,7 +34,7 @@ export default {
       username: sessionStorage.user,
       password: sessionStorage.password,
       user: {},
-      height: 80
+      height: '80'
     }
   },
   methods: {
@@ -43,6 +43,7 @@ export default {
         .then(response => {
           this.user = response.data['result']
           console.log(this.user)
+          sessionStorage.user_cookie = this.user['user_cookie']
         })
         .catch(function (error) {
           console.log(error)
@@ -51,6 +52,8 @@ export default {
     jump (index, tr) {
       var portfoliocookie = tr.$children[0].$el.innerText
       console.log(portfoliocookie)
+      sessionStorage.portfolio_cookie = portfoliocookie
+      this.$router.push({ name: 'portfolio', params: { id: portfoliocookie } })
     }
   },
   mounted () {
