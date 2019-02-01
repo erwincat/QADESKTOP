@@ -2,10 +2,11 @@
   <div id='acc'>
       <h1>> {{this.user['username']}}</h1>
 
-        <h2>当前积分 {{this.user['coins']}}</h2>
+        <h2>策略树概览</h2>
 
         <div id='usernode'></div>
         <h2>策略组</h2>
+        <mu-button>创建新的组合</mu-button>
         <div id='table'>
           <mu-table :height="height" @rowClick="jump" :showCheckbox=false >
           <mu-thead  slot="header">
@@ -24,6 +25,7 @@
           </mu-table>
         </div>
         <h2>策略订阅</h2>
+        
           <div id='strategy'>
             <mu-table :height="height"  :showCheckbox=false >
             <mu-thead  slot="header">
