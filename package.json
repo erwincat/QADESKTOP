@@ -104,7 +104,7 @@
     "multispinner": "^0.2.1",
     "node-loader": "^0.6.0",
     "shelljs": "^0.8.2",
-    "style-loader": "^0.18.2",
+    "style-loader": "^0.23.0",
     "url-loader": "^1.1.2",
     "vue-easytable": "^1.7.1",
     "vue-html-loader": "^1.2.4",
